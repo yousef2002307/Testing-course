@@ -1,0 +1,39 @@
+Group words that contain the exact same characters with the same frequencies, regardless of original character order.
+
+**Function Signature**
+
+```php
+function groupAnagrams(array $strs): array {
+    // Return an array of grouped anagram arrays
+}
+
+```
+
+**Examples**
+
+* **Example 1**
+* **Input:** `$strs = ["eat", "tea", "tan", "ate", "nat", "bat"]`
+* **Output:** `[["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]`
+
+
+* **Example 2**
+* **Input:** `$strs = [""]`
+* **Output:** `[[""]]`
+
+
+* **Example 3**
+* **Input:** `$strs = ["a"]`
+* **Output:** `[["a"]]`
+
+
+
+**Constraints**
+
+* $1 \le \text{count}(\$strs) \le 10^4$
+* $0 \le \text{strlen}(\$strs[i]) \le 100$
+* Input strings consist solely of lowercase English letters.
+
+**Target Efficiency**
+
+* **Time Complexity:** Aim for $O(N \cdot K \log K)$ using sorting, or $O(N \cdot K)$ using frequency counts, where $N$ is the number of strings and $K$ is the maximum length of a string.
+* **Space Complexity:** $O(N \cdot K)$ to store the grouped output in PHP associative arrays.
