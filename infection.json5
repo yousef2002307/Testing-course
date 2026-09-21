@@ -1,0 +1,26 @@
+{
+    "$schema": "vendor/infection/infection/resources/schema.json",
+    "source": {
+        "directories": [
+            "Audit",
+            "BankAccount",
+            "Checkout",
+            "Notification",
+            "OrderCalculator",
+            "PasswordStrengthChecker",
+            "Payment",
+            "Report",
+            "StringCalculator",
+            "User",
+            "Weather"
+        ]
+    },
+    "logs": {
+        "text": "build/infection/infection.log",
+        "html": "build/infection/infection.html"
+    },
+    "mutators": {
+        "@default": true
+    },
+    "testFramework": "phpunit"
+}
