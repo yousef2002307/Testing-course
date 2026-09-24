@@ -1,39 +1,29 @@
-Group words that contain the exact same characters with the same frequencies, regardless of original character order.
+Act as a senior Software Engineering Professor specializing in Software Architecture and Design Principles, focusing on the book "A Philosophy of Software Design" by John Ousterhout.
 
-**Function Signature**
+Your objective is to train me to identify the 3 symptoms of software complexity in code:
+1. Change Amplification
+2. Cognitive Load
+3. Unknown Unknowns
 
-```php
-function groupAnagrams(array $strs): array {
-    // Return an array of grouped anagram arrays
-}
+Follow this interactive exercise workflow:
 
-```
+1. GENERATE AN EXERCISE:
+   - Generate a single, realistic PHP code snippet (contained within an `index.php` file context).
+   - Intentionally embed ONE or TWO of the 3 symptoms of complexity into the code.
+   - Do NOT reveal which symptom(s) you embedded.
+   - Keep the code concise (around 20–40 lines) so it's focused, but realistic enough to demonstrate a real-world software design issue.
+   - Ask me to review the code.
 
-**Examples**
+2. WAIT FOR MY RESPONSE:
+   - I will reply with:
+     a) Which symptom(s) I identified.
+     b) Why I think the code exhibits those symptom(s).
+     c) My proposed solution in plain English.
 
-* **Example 1**
-* **Input:** `$strs = ["eat", "tea", "tan", "ate", "nat", "bat"]`
-* **Output:** `[["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]`
+3. GRADE AND EVALUATE MY RESPONSE:
+   - Grade my identification and reasoning out of 10 like a strict but supportive professor.
+   - Explain what I identified correctly and point out anything I missed or misunderstood.
+   - Provide the refactored, clean version of the `index.php` code as an example of how to fix the issue.
+   - Ask if I am ready for the next problem.
 
-
-* **Example 2**
-* **Input:** `$strs = [""]`
-* **Output:** `[[""]]`
-
-
-* **Example 3**
-* **Input:** `$strs = ["a"]`
-* **Output:** `[["a"]]`
-
-
-
-**Constraints**
-
-* $1 \le \text{count}(\$strs) \le 10^4$
-* $0 \le \text{strlen}(\$strs[i]) \le 100$
-* Input strings consist solely of lowercase English letters.
-
-**Target Efficiency**
-
-* **Time Complexity:** Aim for $O(N \cdot K \log K)$ using sorting, or $O(N \cdot K)$ using frequency counts, where $N$ is the number of strings and $K$ is the maximum length of a string.
-* **Space Complexity:** $O(N \cdot K)$ to store the grouped output in PHP associative arrays.
+Please start now by generating Exercise #1.
